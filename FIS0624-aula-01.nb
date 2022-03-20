@@ -1,0 +1,800 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     31830,        792]
+NotebookOptionsPosition[     24125,        637]
+NotebookOutlinePosition[     27690,        715]
+CellTagsIndexPosition[     27612,        710]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar", "FirstSlide",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"322a4c5c-651e-4e4d-94d7-f70da6070574"],
+
+Cell[CellGroupData[{
+
+Cell["F\[IAcute]sica Qu\[AHat]ntica I  - Aula 01", "Section",
+ CellChangeTimes->{{3.8565343076481714`*^9, 3.856534319198967*^9}, {
+   3.856534383685053*^9, 3.856534405643521*^9}, {3.85653460226523*^9, 
+   3.856534657081631*^9}, {3.8565347515158677`*^9, 3.8565347578154683`*^9}, {
+   3.8565359359516735`*^9, 3.8565359385613823`*^9}, {3.8565363575888014`*^9, 
+   3.856536363498313*^9}, {3.856593308279867*^9, 3.8565933179785547`*^9}, 
+   3.8567862045323*^9},ExpressionUUID->"e9877af7-d43f-4dd1-ac10-33e63e0ce462"],
+
+Cell[TextData[StyleBox["FIS0624  - UFRN- 2022.1 - 246M34\nAssistente docente: \
+Lucas Freitas\nRef. principal: Shankar, Principles of QM.\n",
+ FontFamily->"Georgia"]], "Text",
+ CellChangeTimes->{{3.856535347529094*^9, 3.856535370224209*^9}, {
+   3.856535445585065*^9, 3.8565354465893173`*^9}, {3.856535550314234*^9, 
+   3.856535575050108*^9}, {3.856535899039504*^9, 3.856535908635885*^9}, {
+   3.856536049097059*^9, 3.856536075377084*^9}, 3.856536133696746*^9, {
+   3.856540277947056*^9, 3.856540288550585*^9}, {3.856542533939876*^9, 
+   3.856542577215787*^9}, {3.8565938585348835`*^9, 3.8565938716135197`*^9}},
+ FontFamily->"Constantia",
+ FontSize->20,ExpressionUUID->"f8ff8380-7966-4de9-bcd3-0695d75a5e1a"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Parte 1", "Subsubsection"],
+ " "
+}], "Subsubsection",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellFrameColor->GrayLevel[0.75],
+ CellChangeTimes->{
+  3.8565407406760936`*^9, {3.8565408013603654`*^9, 3.8565410206740723`*^9}, {
+   3.8565413555046735`*^9, 3.856541358939813*^9}, {3.856541401166131*^9, 
+   3.856541519305001*^9}, {3.85654156183099*^9, 3.8565415905556*^9}, {
+   3.856541691761046*^9, 3.8565417324275646`*^9}, {3.85654230340335*^9, 
+   3.8565423065094423`*^9}, 3.8565939279246755`*^9, {3.8567861320682974`*^9, 
+   3.8567861418918095`*^9}},ExpressionUUID->"db858610-ca53-4a45-914f-\
+7b16268e10c1"],
+
+Cell["\<\
+\[FilledSmallCircle]  Matem\[AAcute]tica para mec\[AHat]nica qu\[AHat]ntica\t\
+\t[ch .1]
+\[FilledSmallCircle]  Postulados da f\[IAcute]sica qu\[AHat]ntica             \
+       \t[ch .4]
+\[FilledSmallCircle]  Sistemas uni - dimensionais                        \t\
+[ch . 5, 7]
+\[FilledSmallCircle]  Part\[IAcute]culas id\[EHat]nticas e simetrias\t\t\t[ch \
+. 10, 11] \
+\>", "Text",
+ CellChangeTimes->{{3.8567861363345532`*^9, 
+  3.8567861384781313`*^9}},ExpressionUUID->"d81bfe81-5f93-46a6-965b-\
+c45b88e1919c"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Parte 2", "Subsubsection"]], "Subsubsection",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellFrameColor->GrayLevel[0.75],
+ CellChangeTimes->{{3.8565410565334764`*^9, 3.8565411670459175`*^9}, 
+   3.856541301141101*^9, {3.8565413640546093`*^9, 3.85654136471405*^9}, {
+   3.856541495605754*^9, 3.8565416248466525`*^9}, {3.8565418437274637`*^9, 
+   3.8565418618475084`*^9}, {3.856786144971154*^9, 
+   3.856786146707322*^9}},ExpressionUUID->"0a799ad7-6f1b-4a26-921f-\
+0a468d4a43f0"],
+
+Cell["\<\
+\[FilledSmallCircle] Momento angular\t\t\t\t\t\t[ch. 12, 15]
+\[FilledSmallCircle] 3D e \[CapitalAAcute]tomo de Hidrog\[EAcute]nio \t\t\t\t\
+[ch. 13]
+\[FilledSmallCircle] Spin \t\t\t\t\t\t\t\t[ch. 14]\
+\>", "Text",
+ CellChangeTimes->{{3.85678614961732*^9, 
+  3.8567861508945045`*^9}},ExpressionUUID->"d52b31d4-30af-4edc-b669-\
+716c5cd58c0e"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Fundamentos", "Subsubsection"]], "Subsubsection",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellFrameColor->GrayLevel[0.75],
+ CellChangeTimes->{{3.8565417705501537`*^9, 3.8565418003763075`*^9}, {
+  3.856541908316642*^9, 3.856541952177847*^9}, {3.8565419987975435`*^9, 
+  3.8565420305672026`*^9}, {3.8565420635222635`*^9, 3.856542151978851*^9}, {
+  3.8565422112586575`*^9, 3.856542215968976*^9}, {3.8565422617638006`*^9, 
+  3.8565422814443245`*^9}, {3.8565423967948256`*^9, 3.8565424284603286`*^9}, {
+  3.8565938868535028`*^9, 3.856593888398856*^9}, {3.8567861668680162`*^9, 
+  3.8567861684874105`*^9}},ExpressionUUID->"3bf36631-919f-4e74-8634-\
+24e81b5b3d65"],
+
+Cell["\<\
+\[FilledSmallCircle] Matriz de densidade, Emaranhamento, \
+\[OpenCurlyDoubleQuote]paradoxo\[CloseCurlyDoubleQuote] EPR
+\[FilledSmallCircle] Probabilidade e Medidas PVM, POVM\
+\>", "Text",
+ CellChangeTimes->{{3.8567861707220993`*^9, 
+  3.856786173257493*^9}},ExpressionUUID->"e2a43152-d0e3-4148-9f8f-\
+6b50ed2ca66a"]
+}, Closed]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"49b51b61-82be-4f66-b394-76272f4931c1"],
+
+Cell[CellGroupData[{
+
+Cell["Necessidade da teoria Qu\[AHat]ntica", "Section",
+ CellChangeTimes->{{3.856594249273243*^9, 
+  3.8565943211467795`*^9}},ExpressionUUID->"d3d0aafb-0944-4439-96a5-\
+6eb70d5a7ebc"],
+
+Cell[TextData[{
+ "\[Bullet] Radia\[CCedilla]\[ATilde]o de corpo negro ->  Quantiza\[CCedilla]\
+\[ATilde]o da luz, ",
+ ButtonBox["Max Planck",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/Max_Planck"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/Max_Planck"],
+ " [1900]\n\[Bullet] Efeito fotoel\[EAcute]trico -> Explicado com \
+f\[OAcute]tons, Einstein [1915]   \n\[Bullet] Modelos at\[OAcute]micos -> \
+Quantiza\[CCedilla]\[ATilde]o das orbitas;",
+ StyleBox[" ",
+  FontColor->GrayLevel[0]],
+ StyleBox[ButtonBox["Thompson",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/J._J._Thomson"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/J._J._Thomson"],
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[", ",
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[ButtonBox["Haas",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/Arthur_Erich_Haas"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/Arthur_Erich_Haas"],
+  IgnoreSpellCheck->True,
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[", ",
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[ButtonBox["Rutherford",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/Ernest_Rutherford"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/Ernest_Rutherford"],
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[", ",
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[ButtonBox["Nicholson",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/John_William_Nicholson"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/John_William_Nicholson"],
+  IgnoreSpellCheck->True,
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[", ",
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[ButtonBox["Bohr",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/Bohr_model"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/Bohr_model"],
+  FontWeight->"Bold",
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[", ",
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[ButtonBox["Sommerfeld",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/Bohr_model#Refinements"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/Bohr_model#Refinements"],
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display1"}]]],
+ StyleBox[" ",
+  FontColor:>Dynamic[
+    CurrentValue[{StyleHints, "ColorSet", "Display3"}]]],
+ "[1910-1913]\n\[Bullet] ",
+ ButtonBox["Experimento",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://www.lorentz.leidenuniv.nl/history/spin/goudsmit.html"], None},
+  ButtonNote->"https://www.lorentz.leidenuniv.nl/history/spin/goudsmit.html"],
+ " ",
+ StyleBox[ButtonBox["Uhlenbeck",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/George_Uhlenbeck"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/George_Uhlenbeck"],
+  IgnoreSpellCheck->True],
+ ", ",
+ StyleBox[ButtonBox["Goudsmit",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/Samuel_Goudsmit"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/Samuel_Goudsmit"],
+  IgnoreSpellCheck->True],
+ " [1925] -> Spin, Pauli [1927]. Qu\[AHat]ntica relativista, Dirac  [1928]\n\
+\[Bullet] F\[EAcute]rmions (el\[EAcute]trons), principio de exclus\[ATilde]o \
+de Pauli,  estat\[IAcute]stica de Fermi-Dirac.\n\[Bullet] B\[OAcute]sons (f\
+\[OAcute]tons), estat\[IAcute]stica de Bose-Einstein.\n\n"
+}], "Text",
+ CellChangeTimes->{{3.856695341453604*^9, 3.856695353748869*^9}, {
+  3.8566954907910657`*^9, 3.8566955982451067`*^9}, {3.8566956349274473`*^9, 
+  3.856695692034464*^9}, {3.8566957399570255`*^9, 3.8566957603901296`*^9}, {
+  3.8566958242147813`*^9, 3.856695873055459*^9}, {3.8566960625980635`*^9, 
+  3.856696080043182*^9}, {3.856696274531466*^9, 3.8566962745344577`*^9}, {
+  3.8566964048956814`*^9, 3.8566964316667657`*^9}, {3.8566965044257355`*^9, 
+  3.856696531890975*^9}, {3.856696568371008*^9, 3.8566965754837384`*^9}, {
+  3.8566966406432667`*^9, 3.8566966669007163`*^9}, {3.8566969244946413`*^9, 
+  3.8566971835287085`*^9}, {3.8567858526170335`*^9, 3.8567858593063765`*^9}, {
+  3.8567862364898934`*^9, 3.8567862615422707`*^9}, {3.8567862968981323`*^9, 
+  3.856786296901675*^9}, {3.856789854172323*^9, 
+  3.856789864613881*^9}},ExpressionUUID->"3d3086be-6011-43d0-8cdc-\
+b9a14a6ba23b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"dcfff5fd-3d82-4135-b10c-abcff06dbc79"],
+
+Cell[CellGroupData[{
+
+Cell["Usos e aplica\[CCedilla]\[OTilde]es de f\[IAcute]sica qu\[AHat]ntica ", \
+"Section",
+ CellChangeTimes->{{3.8565944689816895`*^9, 3.856594478581525*^9}, {
+  3.8565945519200144`*^9, 
+  3.856594553630254*^9}},ExpressionUUID->"f697d186-d33b-4636-99a8-\
+fcafea300096"],
+
+Cell["\<\
+\[Bullet] F\[IAcute]sica at\[OHat]mica, molecular e \[OAcute]ptica.
+\[Bullet] F\[IAcute]sica de part\[IAcute]culas, teoria de cordas, ...
+\[Bullet] Mat\[EAcute]ria condensada: metais, isolantes, semicondutores, \
+supercondutores, superfluidos, magnetismo, 
+\[Bullet] Informa\[CCedilla]\[ATilde]o: criptografia, computa\[CCedilla]\
+\[ATilde]o, comunica\[CCedilla]\[ATilde]o, medida, filosofia (realismo).
+\
+\>", "Text",
+ CellChangeTimes->{{3.8567889341585503`*^9, 3.856788935943268*^9}, {
+   3.856789522326288*^9, 3.856789555521575*^9}, {3.8567897586215334`*^9, 
+   3.8567897996313906`*^9}, {3.8567900709529486`*^9, 
+   3.8567901283583207`*^9}, {3.856790238716481*^9, 3.8567902792145433`*^9}, {
+   3.85679039801373*^9, 3.8567905995851126`*^9}, {3.856790673310928*^9, 
+   3.856790687845605*^9}, {3.8567907962507477`*^9, 3.8567908490817595`*^9}, {
+   3.856790890934097*^9, 3.856791036395619*^9}, 3.856791096508278*^9, {
+   3.8567912129370584`*^9, 3.8567912609826984`*^9}, {3.8567913101436396`*^9, 
+   3.8567913187488894`*^9}, {3.8567915440038795`*^9, 3.856791563939521*^9}, {
+   3.856792017512185*^9, 3.856792046268525*^9}, 
+   3.8567922408470793`*^9},ExpressionUUID->"bc9aeb56-3c04-46a2-a2c5-\
+68d8ed13ea96"],
+
+Cell[TextData[{
+ "\[Bullet] Eletr\[OHat]nica: sensor, transistor, jun\[CCedilla]\[OTilde]es, \
+diodos/LED, memoria flash/SSD, Laser, ...\n\[Bullet] T\[EAcute]cnicas: \
+Microscopia eletr\[OHat]nica, raio-X , resson\[AHat]ncia magn\[EAcute]tica \
+nuclear, microscopia de for\[CCedilla]a at\[OHat]mica, ...\n\[Bullet] ",
+ StyleBox[ButtonBox["Bio",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/Quantum_biology"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/Quantum_biology"],
+  IgnoreSpellCheck->True],
+ ButtonBox["-f\[IAcute]sica",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/Quantum_biology"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/Quantum_biology"],
+ ": f\[IAcute]sica m\[EAcute]dica (radiologia, ..., f\[AAcute]rmacos), DNA, \
+enzimas, muta\[CCedilla]\[OTilde]es, absor\[CCedilla]\[ATilde]o de luz, troca \
+de ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["H", "+"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8473d44d-a087-4c81-b1fb-d1eea1f72ec8"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.856791102417839*^9, 3.8567911217089195`*^9}, {
+  3.8567914980448465`*^9, 3.8567915036984243`*^9}, {3.85679173941049*^9, 
+  3.856791739604869*^9}},ExpressionUUID->"656dd32a-7032-45fb-8d0f-\
+99e5347f203a"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"8d6f334b-f1af-4e72-be5b-e086750f79fd"],
+
+Cell["Postulados da F\[IAcute]sica Qu\[AHat]ntica", "Section",
+ CellChangeTimes->{{3.8567879996094475`*^9, 
+  3.8567880085353055`*^9}},ExpressionUUID->"91d1d551-ea14-4ba2-ac35-\
+f3863933d3ba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"245f4106-00b9-49fb-acd8-d01d839ce249"],
+
+Cell["\[CapitalAAcute]lgebra linear - Autovalores e autovetores", "Section",
+ CellChangeTimes->{{3.85659473569958*^9, 3.8565947412030325`*^9}, {
+  3.856594960491502*^9, 
+  3.8565949703164654`*^9}},ExpressionUUID->"9bce088c-4ac5-4d4a-9055-\
+bc25132b93eb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"6d6ad2ac-3929-45c7-8fcf-01ea975a5e05"],
+
+Cell[CellGroupData[{
+
+Cell["\[CapitalAAcute]lgebra linear - Autovalores e autovetores - exemplo", \
+"Section",
+ CellChangeTimes->{{3.85659473569958*^9, 3.8565947412030325`*^9}, {
+  3.856594960491502*^9, 3.8565949703164654`*^9}, {3.856695322173665*^9, 
+  3.856695323838745*^9}},ExpressionUUID->"907f6bfa-6f7a-4745-bec4-\
+f74e2a84ea9a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{
+    FractionBox["1", 
+     SqrtBox["2"]], 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", 
+        RowBox[{"-", "\[ImaginaryI]"}], ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\[ImaginaryI]", ",", "0", ",", 
+        RowBox[{"-", "\[ImaginaryI]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "\[ImaginaryI]", ",", "0"}], "}"}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", " ", 
+  RowBox[{"\"\<a = \>\"", ",", " ", 
+   RowBox[{"MatrixForm", "@", "a"}], ",", 
+   "\"\<;          a - \[Lambda] \!\(\*SubscriptBox[\(\[DoubleStruckCapitalI]\
+\), \(3\)]\) = \>\"", ",", " ", 
+   RowBox[{"MatrixForm", "[", " ", 
+    RowBox[{"a", " ", "-", " ", 
+     RowBox[{"\[Lambda]", " ", 
+      RowBox[{"IdentityMatrix", "[", "3", "]"}]}]}], " ", "]"}], " ", ",", 
+   " ", "\"\<. \>\""}], " ", "]"}]}], "Input",
+ CellChangeTimes->{{3.8565399511379457`*^9, 3.856539967248947*^9}, {
+   3.8565401820215006`*^9, 3.856540260733987*^9}, {3.856594909825406*^9, 
+   3.8565949362513704`*^9}, {3.85659524876398*^9, 3.8565953284876766`*^9}, 
+   3.8565954522405825`*^9},
+ CellLabel->"In[24]:=",ExpressionUUID->"f72bd8a5-2da5-41bb-bec9-3337b990329f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"a = \"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"0", 
+        RowBox[{"-", 
+         FractionBox["\[ImaginaryI]", 
+          SqrtBox["2"]]}], "0"},
+       {
+        FractionBox["\[ImaginaryI]", 
+         SqrtBox["2"]], "0", 
+        RowBox[{"-", 
+         FractionBox["\[ImaginaryI]", 
+          SqrtBox["2"]]}]},
+       {"0", 
+        FractionBox["\[ImaginaryI]", 
+         SqrtBox["2"]], "0"}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]], 
+   "\[InvisibleSpace]", "\<\";          a - \[Lambda] \
+\\!\\(\\*SubscriptBox[\\(\[DoubleStruckCapitalI]\\), \\(3\\)]\\) = \"\>", 
+   "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {
+        RowBox[{"-", "\[Lambda]"}], 
+        RowBox[{"-", 
+         FractionBox["\[ImaginaryI]", 
+          SqrtBox["2"]]}], "0"},
+       {
+        FractionBox["\[ImaginaryI]", 
+         SqrtBox["2"]], 
+        RowBox[{"-", "\[Lambda]"}], 
+        RowBox[{"-", 
+         FractionBox["\[ImaginaryI]", 
+          SqrtBox["2"]]}]},
+       {"0", 
+        FractionBox["\[ImaginaryI]", 
+         SqrtBox["2"]], 
+        RowBox[{"-", "\[Lambda]"}]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]], "\[InvisibleSpace]", "\<\". \"\>"}],
+  SequenceForm["a = ", 
+   MatrixForm[{{0, Complex[0, -1] 2^Rational[-1, 2], 0}, {
+     Complex[0, 1] 2^Rational[-1, 2], 0, Complex[0, -1] 2^Rational[-1, 2]}, {
+     0, Complex[0, 1] 2^Rational[-1, 2], 0}}], 
+   ";          a - \[Lambda] \!\(\*SubscriptBox[\(\[DoubleStruckCapitalI]\), \
+\(3\)]\) = ", 
+   MatrixForm[{{-$CellContext`\[Lambda], Complex[0, -1] 2^Rational[-1, 2], 
+      0}, {Complex[0, 1] 2^Rational[-1, 2], -$CellContext`\[Lambda], 
+      Complex[0, -1] 2^Rational[-1, 2]}, {
+     0, Complex[0, 1] 2^Rational[-1, 2], -$CellContext`\[Lambda]}}], ". "],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.856595320257596*^9, 3.85659532942621*^9}, 
+   3.856595454614479*^9},
+ CellLabel->
+  "During evaluation of \
+In[24]:=",ExpressionUUID->"9f9799a4-7293-4848-9e8a-0441ead58ee7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"p", " ", "=", " ", 
+   RowBox[{"Det", "[", " ", 
+    RowBox[{"a", " ", "-", " ", 
+     RowBox[{"\[Lambda]", " ", 
+      RowBox[{"IdentityMatrix", "[", "3", "]"}]}]}], " ", "]"}]}], ";", " ", 
+  RowBox[{"Print", "[", " ", 
+   RowBox[{
+   "\"\<Polinomio caracteristico: p(\[Lambda]) = Det ( a - \[Lambda] \
+\!\(\*SubscriptBox[\(\[DoubleStruckCapitalI]\), \(3\)]\) ) = \>\"", ",", " ", 
+    "p"}], " ", "]"}], "  "}]], "Input",
+ CellChangeTimes->{{3.856539968962695*^9, 3.8565399851947002`*^9}, {
+  3.856540033267443*^9, 3.8565400715609074`*^9}, {3.8565947537792735`*^9, 
+  3.856594794395319*^9}, {3.8565953473759346`*^9, 3.8565954508044415`*^9}, {
+  3.8565956539011216`*^9, 3.8565957507105265`*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"7fe5a95d-0a36-4d41-b3e2-563d3e3d05ee"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Polinomio caracteristico: p(\[Lambda]) = Det ( a - \[Lambda] \
+\\!\\(\\*SubscriptBox[\\(\[DoubleStruckCapitalI]\\), \\(3\\)]\\) ) = \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"\[Lambda]", "-", 
+    SuperscriptBox["\[Lambda]", "3"]}]}],
+  SequenceForm[
+  "Polinomio caracteristico: p(\[Lambda]) = Det ( a - \[Lambda] \
+\!\(\*SubscriptBox[\(\[DoubleStruckCapitalI]\), \(3\)]\) ) = ", $CellContext`\
+\[Lambda] - $CellContext`\[Lambda]^3],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.856595434961212*^9, 3.8565954569241476`*^9}, {
+  3.8565956861085835`*^9, 3.856595751797097*^9}},
+ CellLabel->
+  "During evaluation of \
+In[33]:=",ExpressionUUID->"48946d31-754a-4f05-9720-8dbec5650f0f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"evs", " ", "=", " ", 
+   RowBox[{"Solve", "[", " ", 
+    RowBox[{
+     RowBox[{"p", " ", "==", " ", "0"}], ",", " ", "\[Lambda]"}], "]"}]}], 
+  ";", " ", 
+  RowBox[{"Print", "[", " ", 
+   RowBox[{"\"\<Eigenvalues:   \>\"", ",", " ", 
+    RowBox[{"Flatten", "@", "evs"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8565947966512203`*^9, 3.8565948058118305`*^9}, {
+  3.8565955261621733`*^9, 3.856595557449332*^9}, {3.8565955976653347`*^9, 
+  3.856595609649187*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"78c5322a-8fbd-41f0-91e0-5fa8a57f21b1"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Eigenvalues:   \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Lambda]", "\[Rule]", 
+      RowBox[{"-", "1"}]}], ",", 
+     RowBox[{"\[Lambda]", "\[Rule]", "0"}], ",", 
+     RowBox[{"\[Lambda]", "\[Rule]", "1"}]}], "}"}]}],
+  SequenceForm[
+  "Eigenvalues:   ", {$CellContext`\[Lambda] -> -1, $CellContext`\[Lambda] -> 
+    0, $CellContext`\[Lambda] -> 1}],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.8565955584293604`*^9, {3.8565955995450563`*^9, 3.8565956106425424`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"70bcfa15-831d-42f8-baf3-9cc926c2522a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"v1", " ", "=", " ", 
+  RowBox[{"NullSpace", "[", " ", 
+   RowBox[{
+    RowBox[{"a", " ", "-", " ", 
+     RowBox[{"\[Lambda]", " ", 
+      RowBox[{"IdentityMatrix", "[", "3", "]"}]}]}], " ", "/.", " ", 
+    RowBox[{"\[Lambda]", " ", "->", " ", "0"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.856594998178047*^9, 
+  3.85659503757675*^9}},ExpressionUUID->"2e3c08e2-d55e-424c-8b34-\
+4f73e2d82fab"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "0", ",", "1"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.8565950215287547`*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"f50f4829-c06a-4750-b160-897784cad8e0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"f3fdcbc0-51a8-4f80-b915-3fe028f47bcc"],
+
+Cell[CellGroupData[{
+
+Cell["Refer\[EHat]ncias", "Section",
+ CellChangeTimes->{{3.8565426030159173`*^9, 
+  3.8565426079049926`*^9}},ExpressionUUID->"038831a4-a018-41e4-a9c9-\
+86265c923c6c"],
+
+Cell["\<\
+Livro texto
+\[FilledSmallCircle]  Shankar - Principles of Quantum Mechanics \
+\>", "Text",
+ CellChangeTimes->{{3.8565426235651293`*^9, 3.856542673428549*^9}, {
+   3.856542704626028*^9, 3.856542705150061*^9}, 3.856542764296096*^9, {
+   3.8565433607433624`*^9, 
+   3.8565433618229165`*^9}},ExpressionUUID->"0dbb2a7e-e91b-4b3f-9697-\
+c73b9d2f3fbf"],
+
+Cell["\<\
+Livros complementares
+\[FilledSmallCircle] Griffiths - Introduction to Quantum Mechanics
+\[FilledSmallCircle] Konishi, Paffuti - Quantum Mechanics: A New Introduction 
+\[FilledSmallCircle] Cohen-Tannoudji - Quantum Mechanics Volume 1
+\[FilledSmallCircle] Ballentine - Quantum Mechanics: A Modern Development
+\
+\>", "Text",
+ CellChangeTimes->{{3.8565427061204147`*^9, 3.8565427883569174`*^9}, {
+  3.8565432614731083`*^9, 3.856543360338445*^9}, {3.85654353769851*^9, 
+  3.8565435379997053`*^9}},ExpressionUUID->"dcc43f06-6b72-4450-a607-\
+81c7f6c70b71"],
+
+Cell["\<\
+Leitura adicional
+\[FilledSmallCircle] Gordon Baym - Lectures On Quantum Mechanics  
+\[FilledSmallCircle] The Feynman Lectures on Physics - volume III
+\[FilledSmallCircle] Sakurai, Napolitano - Modern Quantum Mechanics
+
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.85654269016532*^9, 3.8565427013710938`*^9}, {
+  3.856542797670221*^9, 3.856542799410845*^9}, {3.856543388013869*^9, 
+  3.8565434548083906`*^9}, {3.8565434882145243`*^9, 3.856543507968586*^9}, {
+  3.856543541929144*^9, 3.856543580538884*^9}, {3.85654361817622*^9, 
+  3.8565436212937374`*^9}},ExpressionUUID->"c5689e53-6c28-45bb-beba-\
+2d90c74765f0"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Slideshow Working",
+WindowSize->{1163.25, 735.},
+WindowMargins->{{-5.25, Automatic}, {Automatic, 0}},
+WindowElements->{
+ "MemoryMonitor", "HorizontalScrollBar", "VerticalScrollBar", 
+  "MagnificationPopUp", "StatusArea", "MenuBar"},
+TaggingRules->{
+ "PresenterSettings" -> {
+   "ShowNavigationBar" -> False, "SlideBreakStyles" -> {"Section"}, 
+    "ShowSlideBreaks" -> True, 
+    "Theme" -> {
+     "ThemeName" -> "Default", "FontSetName" -> "Garnet", "ColorSetName" -> 
+      "Default"}, 
+    "Dialogs" -> {
+     "SlideBreakDefaults" -> 0, "SideNotesPalette" -> 
+      "2c22043d-9d02-47d3-8b15-1c796dbff7cd", "SideNotes" -> 0}, 
+    "WindowSize" -> {752.25, 735.}, 
+    "WindowMargins" -> {{-5.25, 681.}, {-5.25, 0.}}, 
+    "UserModifications" -> {{"Text", FontFamily -> "Constantia"}}, 
+    "LastColorUsed" -> Dynamic[
+      CurrentValue[{StyleHints, "ColorSet", "Display1"}]]}},
+Magnification:>0.6 Inherited,
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (June 19, 2021)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> 
+     FrontEnd`FileName[{"PresenterTools"}, "Default.nb", CharacterEncoding -> 
+       "UTF-8"]]], 
+   Cell[
+    StyleData["Notebook"], 
+    StyleHints -> {
+     ParentList, "CodeFont" -> "Consolas", 
+      "ColorSet" -> {
+       "Display1" -> RGBColor[0.866667, 0.0666667, 0], "Display2" -> 
+        RGBColor[0.968627, 0.466667, 0], "Display3" -> 
+        RGBColor[0.992157, 0.376471, 0.32549], "Text1" -> GrayLevel[0.388235],
+         "Text2" -> GrayLevel[1], "Text3" -> GrayLevel[0], "Text1Reverse" -> 
+        GrayLevel[0.75], "Text2Reverse" -> GrayLevel[0.75], "Text3Reverse" -> 
+        GrayLevel[0.75], "Dingbat" -> RGBColor[0.866667, 0.0666667, 0], 
+        "Default" -> GrayLevel[0.388235], "Background" -> GrayLevel[1]}, 
+      "FontSet" -> {
+       "Display1" -> "Baskerville", "Display2" -> "Baskerville", "Display3" -> 
+        "Baskerville", "Text1" -> "Baskerville", "Text2" -> "Baskerville", 
+        "Text3" -> "Baskerville", "Dingbat" -> "Baskerville", "Default" -> 
+        "Baskerville"}, "SlideBreakStyles" -> {}}]}, Visible -> False, 
+  FrontEndVersion -> "12.3 for Microsoft Windows (64-bit) (June 19, 2021)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+ExpressionUUID->"d98be7d8-422f-46bd-af0c-7a6f10679a48"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[580, 22, 136, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"322a4c5c-651e-4e4d-94d7-f70da6070574",
+   CellTags->"SlideShowHeader"],
+  Cell[5117, 131, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"49b51b61-82be-4f66-b394-76272f4931c1",
+   CellTags->"SlideShowHeader"],
+  Cell[10323, 261, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"dcfff5fd-3d82-4135-b10c-abcff06dbc79",
+   CellTags->"SlideShowHeader"],
+  Cell[13324, 331, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"8d6f334b-f1af-4e72-be5b-e086750f79fd",
+   CellTags->"SlideShowHeader"],
+  Cell[13678, 343, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"245f4106-00b9-49fb-acd8-d01d839ce249",
+   CellTags->"SlideShowHeader"],
+  Cell[14094, 356, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"6d6ad2ac-3929-45c7-8fcf-01ea975a5e05",
+   CellTags->"SlideShowHeader"],
+  Cell[22244, 585, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"f3fdcbc0-51a8-4f80-b915-3fe028f47bcc",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 26577, 692}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 136, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"322a4c5c-651e-4e4d-94d7-f70da6070574",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[741, 28, 511, 6, 72, "Section",ExpressionUUID->"e9877af7-d43f-4dd1-ac10-33e63e0ce462"],
+Cell[1255, 36, 708, 10, 76, "Text",ExpressionUUID->"f8ff8380-7966-4de9-bcd3-0695d75a5e1a"],
+Cell[CellGroupData[{
+Cell[1988, 50, 626, 13, 44, "Subsubsection",ExpressionUUID->"db858610-ca53-4a45-914f-7b16268e10c1"],
+Cell[2617, 65, 519, 12, 104, "Text",ExpressionUUID->"d81bfe81-5f93-46a6-965b-c45b88e1919c"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3173, 82, 491, 8, 35, "Subsubsection",ExpressionUUID->"0a799ad7-6f1b-4a26-921f-0a468d4a43f0"],
+Cell[3667, 92, 350, 8, 80, "Text",ExpressionUUID->"d52b31d4-30af-4edc-b669-716c5cd58c0e"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[4054, 105, 674, 10, 35, "Subsubsection",ExpressionUUID->"3bf36631-919f-4e74-8634-24e81b5b3d65"],
+Cell[4731, 117, 325, 7, 56, "Text",ExpressionUUID->"e2a43152-d0e3-4148-9f8f-6b50ed2ca66a"]
+}, Closed]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5117, 131, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"49b51b61-82be-4f66-b394-76272f4931c1",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5264, 137, 183, 3, 72, "Section",ExpressionUUID->"d3d0aafb-0944-4439-96a5-6eb70d5a7ebc"],
+Cell[5450, 142, 4824, 113, 199, "Text",ExpressionUUID->"3d3086be-6011-43d0-8cdc-b9a14a6ba23b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10323, 261, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"dcfff5fd-3d82-4135-b10c-abcff06dbc79",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[10470, 267, 269, 5, 72, "Section",ExpressionUUID->"f697d186-d33b-4636-99a8-fcafea300096"],
+Cell[10742, 274, 1216, 20, 128, "Text",ExpressionUUID->"bc9aeb56-3c04-46a2-a2c5-68d8ed13ea96"],
+Cell[11961, 296, 1314, 29, 80, "Text",ExpressionUUID->"656dd32a-7032-45fb-8d0f-99e5347f203a"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13324, 331, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"8d6f334b-f1af-4e72-be5b-e086750f79fd",
+ CellTags->"SlideShowHeader"],
+Cell[13449, 335, 192, 3, 72, "Section",ExpressionUUID->"91d1d551-ea14-4ba2-ac35-f3863933d3ba"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13678, 343, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"245f4106-00b9-49fb-acd8-d01d839ce249",
+ CellTags->"SlideShowHeader"],
+Cell[13803, 347, 254, 4, 72, "Section",ExpressionUUID->"9bce088c-4ac5-4d4a-9055-bc25132b93eb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14094, 356, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"6d6ad2ac-3929-45c7-8fcf-01ea975a5e05",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[14241, 362, 312, 5, 72, "Section",ExpressionUUID->"907f6bfa-6f7a-4745-bec4-f74e2a84ea9a"],
+Cell[CellGroupData[{
+Cell[14578, 371, 1265, 31, 81, "Input",ExpressionUUID->"f72bd8a5-2da5-41bb-bec9-3337b990329f"],
+Cell[15846, 404, 2777, 76, 89, "Print",ExpressionUUID->"9f9799a4-7293-4848-9e8a-0441ead58ee7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18660, 485, 811, 16, 35, "Input",ExpressionUUID->"7fe5a95d-0a36-4d41-b3e2-563d3e3d05ee"],
+Cell[19474, 503, 739, 16, 29, "Print",ExpressionUUID->"48946d31-754a-4f05-9720-8dbec5650f0f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20250, 524, 577, 13, 35, "Input",ExpressionUUID->"78c5322a-8fbd-41f0-91e0-5fa8a57f21b1"],
+Cell[20830, 539, 664, 17, 29, "Print",ExpressionUUID->"70bcfa15-831d-42f8-baf3-9cc926c2522a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21531, 561, 419, 10, 35, "Input",ExpressionUUID->"2e3c08e2-d55e-424c-8b34-4f73e2d82fab"],
+Cell[21953, 573, 230, 5, 35, "Output",ExpressionUUID->"f50f4829-c06a-4750-b160-897784cad8e0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22244, 585, 122, 2, 61, "SlideShowNavigationBar",ExpressionUUID->"f3fdcbc0-51a8-4f80-b915-3fe028f47bcc",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[22391, 591, 166, 3, 72, "Section",ExpressionUUID->"038831a4-a018-41e4-a9c9-86265c923c6c"],
+Cell[22560, 596, 355, 8, 56, "Text",ExpressionUUID->"0dbb2a7e-e91b-4b3f-9697-c73b9d2f3fbf"],
+Cell[22918, 606, 560, 11, 151, "Text",ExpressionUUID->"dcc43f06-6b72-4450-a607-81c7f6c70b71"],
+Cell[23481, 619, 616, 14, 175, "Text",ExpressionUUID->"c5689e53-6c28-45bb-beba-2d90c74765f0"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
